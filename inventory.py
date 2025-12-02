@@ -14,7 +14,14 @@ def add_product():
     print("Đã nhập hàng thành công.")
 
 def view_inventory():
-    pass
+    if len(products) == 0:
+        print("Kho chưa có sp nào.")
+        return
+    
+    print("\n--- DANH SÁCH SẢN PHẨM ---")
+    for p in products:
+        print(f"{p['name']} - Giá: {p['price']} - SL: {p['qty']}")
+
 
 def check_low_stock():
     pass
