@@ -24,7 +24,17 @@ def view_inventory():
 
 
 def check_low_stock():
-    pass
+    found = False
+    print("\n--- SẢN PHẨM SẮP HẾT HÀNG (SL < 5) ---")
+    
+    for p in products:
+        if p['qty'] < 5:
+            print(f"{p['name']} - SL: {p['qty']} (Cần nhập thêm)")
+            found = True
+    
+    if not found:
+        print("Tất cả sản phẩm đều đủ số lượng.")
+
 
 def main():
     while True:
