@@ -1,6 +1,6 @@
-# inventory.py
-
 products = []   # Danh sách lưu sản phẩm
+def add_product():
+    pass
 
 def view_inventory():
     pass
