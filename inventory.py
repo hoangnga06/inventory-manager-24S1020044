@@ -1,6 +1,17 @@
-products = []   # Danh sách lưu sản phẩm
+products = [] 
 def add_product():
-    pass
+    name = input("Tên sản phẩm: ")
+    price = int(input("Giá bán: "))
+    qty = int(input("Số lượng tồn kho: "))
+
+    product = {
+        'name': name,
+        'price': price,
+        'qty': qty
+    }
+
+    products.append(product)
+    print("Đã nhập hàng thành công.")
 
 def view_inventory():
     pass
